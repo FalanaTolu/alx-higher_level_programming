@@ -1,4 +1,4 @@
-#Documentation for Project 0x00. Python - Hello, World
+# Documentation for Project 0x00. Python - Hello, World
 
 **This file is mandatory in all ALX School projects**
 

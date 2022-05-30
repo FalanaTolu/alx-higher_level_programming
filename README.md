@@ -1,4 +1,4 @@
-#Documentation for Projects alx-higher_level_programming
+# Documentation for Projects alx-higher_level_programming
 
 **This file is mandatory in all ALX School projects**
 
