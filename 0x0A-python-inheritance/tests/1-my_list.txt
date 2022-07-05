@@ -1,0 +1,62 @@
+============================
+The ``1-my_list`` module
+============================
+
+Using ``Mylist``
+---------------------
+
+Import the class from module:
+    >>> MyList = __import__('1-my_list').MyList
+
+Test for module docstring:
+    >>> m = __import__(1-my_list').__doc__
+    >>> len(m) > 1
+    True
+    
+Test for correct class type:
+    >>> m = MyList()
+    >>> type(m) == MyList
+    True
+
+Test for correct Instance:
+    >>> m = MyList()
+    >>> isinstance(m, list)
+    True
+
+Test for Mylist inheriting from list:
+    >>> m = MyList()
+    >>>issubclass(m, list)
+    True
+    
+Test for empty list:
+    >>> m = MyList()
+    >>> m.print_sorted()
+    []
+
+Test for normal list:
+    >>> m = MyList([2, 10, 1])
+    >>> m.print_sorted()
+    [1, 2, 10]
+
+Test for negative ints list:
+    >>> m = MyList([-10, -98, -100, 0, -2000000, -12])
+    >>> m.print_sorted()
+    [-2000000, -10, -100, -98, -12, 0]
+
+Test for original list unchanged:
+    >>> m = MyList([2, 3, 1, -1, 4, 5, 0])
+    >>> m.print_sorted()
+    [-1, 0, 1, 2, 3, 4, 5]
+    >>> m
+    [2, 3, 1, -1, 4, 5, 0]
+
+Test for list already in order:
+    >>> m = MyList([-1, 0, 1, 2, 3, 4, 5])
+    >>> m.print_sorted()
+    [-1, 0, 1, 2, 3, 4, 5]
+
+Test append:
+    >>> m = MyList()
+    >>> m.append(10)
+    >>> m
+    [10]
